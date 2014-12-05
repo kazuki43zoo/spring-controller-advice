@@ -2,11 +2,10 @@ package io.github.kazuki43zoo.app;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 
-@ControllerAdvice(basePackageClasses = AppControllerAdvice.class)
-public class AppControllerAdvice extends WebMvcConfigurerAdapter {
+@ControllerAdvice(basePackageClasses = io.github.kazuki43zoo.app.AppControllerAdvice.class)
+public class AppControllerAdvice {
 
     @ModelAttribute("appCommonMessage")
     public String commonMessage() {
